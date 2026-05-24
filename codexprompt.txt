@@ -1,0 +1,145 @@
+{
+  "project_name": "Egemen Erdoğan RGB Gaming Hub",
+  "language": "tr",
+  "prompt": {
+    "role": "system",
+    "content": "Modern, koyu temalı, RGB efektli ve tamamen Türkçe bir oyun web sitesi geliştir. Tasarım profesyonel, akıcı animasyonlara sahip ve oyuncu odaklı olmalı. Site masaüstü ve mobil uyumlu olmalı.",
+    "requirements": {
+      "theme": {
+        "style": "dark-rgb-gaming",
+        "primary_colors": [
+          "#0f0f0f",
+          "#121212",
+          "#1a1a1a",
+          "#00ffff",
+          "#ff00ff",
+          "#7a00ff"
+        ],
+        "visual_style": [
+          "neon glow",
+          "rgb borders",
+          "soft blur",
+          "glassmorphism",
+          "smooth animations",
+          "gaming ui"
+        ]
+      },
+      "loading_screen": {
+        "enabled": true,
+        "duration_seconds": 3,
+        "background": "dark rgb animated gradient",
+        "text": "Site Egemen Erdoğan tarafından geliştirildi",
+        "text_effect": "rgb neon glow pulse animation",
+        "transition": "fade out"
+      },
+      "header": {
+        "logo_type": "custom gaming controller mascot",
+        "logo_description": "Üzerinde kulaklık bulunan ve cool güneş gözlüğü takan modern oyun kumandası. Kumandanın yüzü olmayacak. Ağız, burun, göz gibi insan yüz detayları bulunmayacak. Minimal ama havalı görünmeli.",
+        "navbar": {
+          "tabs": [
+            "Ana Sayfa",
+            "Oyunlar",
+            "Liderlik Tablosu",
+            "Hakkında",
+            "İletişim"
+          ],
+          "effects": [
+            "rgb hover glow",
+            "smooth underline animation",
+            "glass effect"
+          ]
+        }
+      },
+      "cursor_effects": {
+        "button_hover": {
+          "enabled": true,
+          "effect": "electric rgb spark",
+          "style": "minimal but cool",
+          "animation": "fast electric pulse"
+        }
+      },
+      "pages": {
+        "home": {
+          "sections": [
+            "Hero Banner",
+            "Featured Games",
+            "Popular Games",
+            "Gaming News Card Area"
+          ]
+        },
+        "games": {
+          "games_list": [
+            {
+              "name": "Hafıza Oyunu",
+              "type": "JavaScript Memory Game",
+              "features": [
+                "kart eşleştirme sistemi",
+                "süre sayacı",
+                "puan sistemi",
+                "rgb kart efektleri"
+              ]
+            },
+            {
+              "name": "2D Bilardo",
+              "type": "Canvas Based Pool Game",
+              "features": [
+                "gerçekçi top çarpışmaları",
+                "mouse ile nişan alma",
+                "skor sistemi",
+                "rgb masa ışıkları"
+              ]
+            },
+            {
+              "name": "Mini Minecraft",
+              "type": "Voxel Sandbox Mini Game",
+              "features": [
+                "blok yerleştirme",
+                "blok kırma",
+                "mini voxel dünya",
+                "basit first person kamera"
+              ],
+              "fallback_if_too_complex": "Basit voxel sandbox demo oluştur."
+            }
+          ]
+        }
+      },
+      "animations": {
+        "page_transition": "smooth fade",
+        "hover_effects": "rgb glow",
+        "cards": "floating neon shadows",
+        "background": "animated rgb particles"
+      },
+      "footer": {
+        "text": "Egemen Erdoğan tarafından geliştirildi",
+        "copyright": "© 2026 Egemen Erdoğan - Tüm Hakları Saklıdır",
+        "style": "dark glass rgb footer"
+      },
+      "technical_requirements": {
+        "frontend": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "allowed_libraries": [
+          "Three.js",
+          "GSAP",
+          "Particles.js"
+        ],
+        "responsive": true,
+        "performance_optimized": true,
+        "clean_code": true,
+        "modern_ui": true
+      },
+      "extra_details": {
+        "site_feel": "Profesyonel gaming platformu hissi vermeli.",
+        "ui_quality": "AAA oyun launcher arayüzü kalitesinde görünmeli.",
+        "effects": [
+          "rgb neon shadows",
+          "animated gradients",
+          "subtle electric effects",
+          "smooth hover transitions"
+        ]
+      }
+    }
+  }
+}

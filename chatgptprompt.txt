@@ -1,0 +1,6 @@
+codex aı kullanarak bir web sitesi geliştiriyorum. Codexde kullanabileceğim bir prompta ihtiaycım var. Bu prompt json formatında olmalı. Site dili türkçe olacak. Sitenin girişinde 3 saniyelik bir loading ekranında site Egemen Erdoğan tarafından geliştirildi yazmalı. Footer'a da benzeri ekle. Footer'da Egemen Erdoğan üzerine copyright olacak. Site modern ve koyu temalı ama rgb ve havalı tonda olacak. Sitenin en üstünde havalı görünen üzerine kulaklık geçirilmiş ve cool güneş gözlüğü takan bir oyun kumandası olacak. (ama ifadesi falan olmayacak ağzı burnu vb. olmayacak.) Sitede imleç butonların üzerine geldiğinde butonlar havalı ama abartı olmayan bir elektrik efekti yapacak. Sitenin neredeyse tamamı koyu rgb renkle dolu olacak. Ve 5 tane sekmesi olacak.
+Oyun sitesi olacak.
+Oyunun bir tanesi js ile hafıza oyunu olabilir.
+Oyunlardan diğeri 2d bilardo olabilir.
+Oyunlardan bir diğeri ise eğer mümkünse mini minecraft olabilir.
+Codexde kullanabileceğim bir prompta ihtiaycım var.

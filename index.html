@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egemen Erdoğan RGB Gaming Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Yükleniyor">
+    <div class="loader-grid"></div>
+    <div class="loader-core">
+      <div class="loader-ring"></div>
+      <p>Site Egemen Erdoğan tarafından geliştirildi</p>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-spark" id="cursorSpark" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#ana-sayfa" aria-label="Egemen Erdoğan RGB Gaming Hub">
+      <span class="mascot" aria-hidden="true">
+        <span class="headset"></span>
+        <span class="controller">
+          <span class="dpad"></span>
+          <span class="stick left-stick"></span>
+          <span class="stick right-stick"></span>
+          <span class="buttons"></span>
+          <span class="glasses"></span>
+        </span>
+      </span>
+      <span class="brand-text">Egemen Erdoğan<br><strong>RGB Gaming Hub</strong></span>
+    </a>
+    <button class="menu-toggle neon-button" id="menuToggle" type="button" aria-label="Menüyü aç">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="mainNav" aria-label="Ana menü">
+      <a href="#ana-sayfa">Ana Sayfa</a>
+      <a href="#oyunlar">Oyunlar</a>
+      <a href="#liderlik">Liderlik Tablosu</a>
+      <a href="#hakkinda">Hakkında</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="ana-sayfa">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Yeni Nesil Türkçe Oyun Platformu</p>
+        <h1>Egemen Erdoğan RGB Gaming Hub</h1>
+        <p class="hero-text">Neon ışıklar, hızlı mini oyunlar, canlı skorlar ve oyuncu odaklı bir launcher deneyimi tek ekranda.</p>
+        <div class="hero-actions">
+          <a class="neon-button primary" href="#oyunlar">Oyunlara Başla</a>
+          <a class="neon-button" href="#liderlik">Skorları Gör</a>
+        </div>
+      </div>
+      <div class="hero-panel reveal">
+        <div class="status-bar">
+          <span>Canlı Sistem</span>
+          <strong>RGB Aktif</strong>
+        </div>
+        <div class="power-orbit">
+          <span></span><span></span><span></span>
+          <div class="power-core">GGH</div>
+        </div>
+        <div class="hero-stats">
+          <div><strong>3</strong><span>Mini Oyun</span></div>
+          <div><strong>60 FPS</strong><span>Akıcı Arayüz</span></div>
+          <div><strong>TR</strong><span>Tam Türkçe</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Öne Çıkanlar</p>
+        <h2 id="featured-title">Hızlı erişim oyun alanı</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="game-card large reveal">
+          <span class="card-tag">Refleks</span>
+          <h3>Hafıza Oyunu</h3>
+          <p>Kartları eşleştir, süreye karşı puanını yükselt ve RGB kart efektlerini yakala.</p>
+          <button class="neon-button play-jump" data-target="memoryGame">Oyna</button>
+        </article>
+        <article class="game-card reveal">
+          <span class="card-tag">Fizik</span>
+          <h3>2D Bilardo</h3>
+          <p>Mouse ile nişan al, vuruş gücünü ayarla ve topları neon masada hareket ettir.</p>
+          <button class="neon-button play-jump" data-target="poolGame">Oyna</button>
+        </article>
+        <article class="game-card reveal">
+          <span class="card-tag">Sandbox</span>
+          <h3>Mini Minecraft</h3>
+          <p>Mini voxel dünyada blok yerleştir, kır ve yaratıcı mod hissini dene.</p>
+          <button class="neon-button play-jump" data-target="voxelGame">Oyna</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section news-band" aria-labelledby="popular-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Popüler Oyunlar</p>
+        <h2 id="popular-title">Bugünün oyuncu akışı</h2>
+      </div>
+      <div class="news-grid">
+        <article class="news-card reveal"><strong>Turnuva Modu</strong><span>Haftalık skor sıralaması yenilendi.</span></article>
+        <article class="news-card reveal"><strong>RGB Kart Paketi</strong><span>Hafıza oyununa yeni neon desenler eklendi.</span></article>
+        <article class="news-card reveal"><strong>Bilardo Masası</strong><span>Çarpışma hissi ve sürtünme ayarları güçlendirildi.</span></article>
+      </div>
+    </section>
+
+    <section class="section games-section" id="oyunlar" aria-labelledby="games-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Oyunlar</p>
+        <h2 id="games-title">Üç farklı oyun modu</h2>
+      </div>
+
+      <div class="game-shell reveal" id="memoryGame">
+        <div class="game-header">
+          <div>
+            <p class="eyebrow">JavaScript Memory Game</p>
+            <h3>Hafıza Oyunu</h3>
+          </div>
+          <div class="game-metrics">
+            <span>Süre: <strong id="memoryTime">0</strong>s</span>
+            <span>Puan: <strong id="memoryScore">0</strong></span>
+          </div>
+          <button class="neon-button" id="resetMemory" type="button">Yenile</button>
+        </div>
+        <div class="memory-board" id="memoryBoard" aria-label="Hafıza oyunu kartları"></div>
+      </div>
+
+      <div class="game-shell reveal" id="poolGame">
+        <div class="game-header">
+          <div>
+            <p class="eyebrow">Canvas Based Pool Game</p>
+            <h3>2D Bilardo</h3>
+          </div>
+          <div class="game-metrics">
+            <span>Vuruş: <strong id="poolShots">0</strong></span>
+            <span>Skor: <strong id="poolScore">0</strong></span>
+          </div>
+          <button class="neon-button" id="resetPool" type="button">Masayı Sıfırla</button>
+        </div>
+        <canvas class="pool-canvas" id="poolCanvas" width="920" height="460"></canvas>
+        <p class="game-hint">Beyaz topun üstünde sürükleyip bırak: çizgi nişan, uzunluk güç demek.</p>
+      </div>
+
+      <div class="game-shell reveal" id="voxelGame">
+        <div class="game-header">
+          <div>
+            <p class="eyebrow">Voxel Sandbox Mini Game</p>
+            <h3>Mini Minecraft</h3>
+          </div>
+          <div class="game-metrics">
+            <span>Blok: <strong id="blockCount">0</strong></span>
+            <span>Seçili: <strong id="selectedBlock">Cyan</strong></span>
+          </div>
+          <button class="neon-button" id="clearVoxels" type="button">Temizle</button>
+        </div>
+        <div class="voxel-tools" id="voxelTools"></div>
+        <div class="voxel-world" id="voxelWorld" aria-label="Mini voxel dünya"></div>
+      </div>
+    </section>
+
+    <section class="section leaderboard" id="liderlik" aria-labelledby="leader-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Liderlik Tablosu</p>
+        <h2 id="leader-title">Hub şampiyonları</h2>
+      </div>
+      <div class="leader-list reveal" id="leaderList"></div>
+    </section>
+
+    <section class="section split-section" id="hakkinda">
+      <div class="reveal">
+        <p class="eyebrow">Hakkında</p>
+        <h2>AAA launcher hissi, sade ve hızlı yapı</h2>
+      </div>
+      <p class="reveal">Bu hub; koyu RGB tema, cam efektli paneller, elektrikli hover dokunuşları ve tamamen Türkçe arayüzle Egemen Erdoğan imzasını taşıyan modern bir mini oyun deneyimi sunar.</p>
+    </section>
+
+    <section class="section contact" id="iletisim">
+      <div class="section-heading reveal">
+        <p class="eyebrow">İletişim</p>
+        <h2>Oyuncu ağına katıl</h2>
+      </div>
+      <form class="contact-form reveal">
+        <input type="text" placeholder="Oyuncu adın" aria-label="Oyuncu adın">
+        <input type="email" placeholder="E-posta" aria-label="E-posta">
+        <textarea placeholder="Mesajın" aria-label="Mesajın"></textarea>
+        <button class="neon-button primary" type="submit">Mesaj Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>Egemen Erdoğan tarafından geliştirildi</strong>
+    <span>© 2026 Egemen Erdoğan - Tüm Hakları Saklıdır</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
