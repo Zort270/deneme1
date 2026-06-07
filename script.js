@@ -438,11 +438,11 @@ function setupVoxels() {
 setupVoxels();
 
 const leaders = [
-  ["01", "Egemen", 9840],
-  ["02", "NeonUsta", 8720],
-  ["03", "RGBKral", 8110],
-  ["04", "PixelAvcısı", 7660],
-  ["05", "BilardoPro", 6900]
+  ["01", "Kayra", 9840],
+  ["02", "EgemenEE5", 8660],
+  ["03", "Türklokumu", 8110],
+  ["04", "Eddy_Emirhan", 7340],
+  ["05", "Rüzgar", 6750]
 ];
 
 document.getElementById("leaderList").innerHTML = leaders.map(([rank, name, score]) => `
